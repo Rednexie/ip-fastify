@@ -59,6 +59,15 @@ fastify.get('/ip', (request, reply) => {
 })
 
 
+fastify.get('/json/:id', (request, reply) => {
+    const id = request.params.id;
+    const ip = request.ip;
+    const res = {}
+    res[id] = ip
+    reply.send(res)
+})
+
+
 process.on('uncaughtException', (error) => {
     console.error(error)
     fastify.close();
