@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "fastify": "^4.25.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "name": "ip-fastify",
+  "description": "Basic IP API using node.js",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm exec nodemon -q .",
+    "build": "npm i",
+    "push": "git add . && git commit && git push",
+    "dev": "npm i -D nodemon && nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https//github.com/Rednexie/fastify-ip"
+  },
+  "author": "Rednexie",
+  "license": "MIT"
+}
