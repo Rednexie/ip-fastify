@@ -1,4 +1,3 @@
-const cors = require('@fastify/cors')
 const fs = require('fs')
 const fastify = require('fastify')({
     trustProxy: true,
