@@ -81,4 +81,4 @@ fastify.listen({ port }, (err, addr) => {
     console.log('fastify-ip is listening on port', port)
 })
 
-if(log) fs.writeFileSync('./logs', '', 'utf-8')
+if(log && !fs.existsSync('./logs')) fs.writeFileSync('./logs', '', 'utf-8')
