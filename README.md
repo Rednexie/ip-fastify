@@ -16,4 +16,4 @@ log: whether to save the requests to a text file. default is true
 port: the http port to start the webserver and listen on. default is 3000
 
 ### License
-MIT
+ip-fastify is licensed under MIT.
