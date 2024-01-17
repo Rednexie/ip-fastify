@@ -4,20 +4,11 @@ const fastify = require('fastify')({
     logger: false,
 });
 
-
-
-
-
 const log = true;
 const port = 3000;
 
 
-
-
-
 fastify.register(require('@fastify/cors'))
-
-
 fastify.addHook('preHandler', (req, res, next) => {
     if(log){
         fs.appendFile('./logs', `[${new Date().toLocaleString()}] ${req.ip}: ${req.method} => ${req.originalUrl}`, (err) => {
@@ -56,7 +47,6 @@ fastify.get('/ips', (request, reply) => {
 fastify.get('/ip', (request, reply) => {
     return request.ip
 })
-
 
 fastify.get('/json/:id', (request, reply) => {
     const id = request.params.id;
