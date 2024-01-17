@@ -6,7 +6,7 @@ Basic IP API using node.js and fastify
 - `node:fs`
 ### Endpoints
 /ip => ip as text<br>
-/ips => ips as text<br>
+/ips => ips as json ["0.0.0.0", "127.0.0.1"]<br>
 /text => ip as text<br>
 /json => ip as json: `{ "ip": "0.0.0.0" }`<br>
 /json/:id => ip as json: ` { "$id": "0.0.0.0" }`
